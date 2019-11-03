@@ -1,0 +1,93 @@
+body {
+    background-color: white;
+  }
+
+  .twitter:before {
+    font-family: "Font Awesome 5 Brands";
+    content: '\f099';
+    color: rgb(113, 170, 219);
+    font-size: 130%;
+  }
+
+  .facebook:before {
+    font-family: "Font Awesome 5 Brands";
+    content: '\f082';
+    color: rgb(12, 73, 128);
+    font-size: 130%;
+  }
+
+  .insta:before {
+    font-family: "Font Awesome 5 Brands";
+    content: '\f16d';
+    color: rgb(255, 159, 231);
+    font-size: 130%;
+  }
+
+/**********アニメーション設定**********/
+/*右から左*/
+@keyframes RightToLeft {
+  0% {
+      opacity: 0;/* 透明 */
+      transform: translateX(100px);/* X軸方向に50px */
+  }
+  100% {
+      opacity: 1;/* 不透明 */
+      transform: translateX(0);/* X軸方向に0px */
+  }
+  }
+  @keyframes LeftToRight {
+    0% {
+        opacity: 0;/* 透明 */
+        transform: translateX(-100px);/* X軸方向に50px */
+    }
+    100% {
+        opacity: 1;/* 不透明 */
+        transform: translateX(0);/* X軸方向に0px */
+    }
+    }
+  
+  /*上から下*/
+  @keyframes SlideDown {
+  0% {
+      opacity: 0;/* 透明 */
+      transform: translateY(-50px);/* Y軸方向に-50px */
+  }
+  100% {
+      opacity: 1;/* 不透明 */
+      transform: translateY(0);/* Y軸方向に0px */
+  }
+  }
+  
+  /*下から上*/
+  @keyframes SlideUp {
+  0% {
+      opacity: 0;/* 透明 */
+      transform: translateY(50px);/* Y軸方向に50px */
+  }
+  100% {
+      opacity: 1;/* 不透明 */
+      transform: translateY(0);/* Y軸方向に0px */
+  }
+  }
+
+.isPlay {
+  animation-duration: 4s;/* アニメーション時間 */
+  animation-name: RightToLeft;/* アニメーション名 */
+}
+
+.play-1{
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: RightToLeft;/* アニメーション名 */
+}
+.play-2{
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: LeftToRight;/* アニメーション名 */
+}
+.play-3{
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: SlideDown;/* アニメーション名 */
+}
+.play-4{
+  animation-duration: 2s;/* アニメーション時間 */
+  animation-name: SlideUp;/* アニメーション名 */
+}
