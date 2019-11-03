@@ -19,14 +19,20 @@ else {
     document.getElementById("whatPage").style.display = "block";
     $(name).addClass("active");
     switch(name){
-      case "#home":
-          $("#whatPage").html("Home")
+      case "#home"://ここにはファイル名
+          $("#whatPage").html("Home")//ここには表示したいタイトル名
         break;
         case "#features":
           $("#whatPage").html("Features")
         break;
         case "#safety":
           $("#whatPage").html("Safety")
+        break;
+        case "#privacy_policy":
+          $("#whatPage").html("PrivacyPolicy")
+        break;
+        case "#how_to":
+          $("#whatPage").html("HowToUse")
         break;
   }
   });
