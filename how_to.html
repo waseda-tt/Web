@@ -38,18 +38,20 @@
       </div>
 
       <div class="container-fluid mb-5">
+
+<!-- Timetable -->
       <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="timetable">　Timetable</p>
-      <div class="accordion mx-n2" id="accordionExample">
+      <div class="accordion mx-n2" id="timetableExample">
             <div class="card">
               <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="font-size:1rem;">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#timetablecollapseOne" aria-expanded="false" aria-controls="timetablecollapseOne" style="font-size:1rem;">
                     時間割の自動取得
                   </button>
                 </h5>
               </div>
           
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div id="timetablecollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#timetableExample">
                 <div class="card-body">
                         <div class="card">
                                 <div class="card-body">
@@ -57,7 +59,7 @@
                                   <h6 class="card-subtitle mb-2 text-muted">時間割の自動取得</h6>
                                     <div class="row pt-3">
                                       <div class="col">
-                                        <p class="card-text">左上の更新ボタンをタップしましょう。</p>
+                                        <p class="card-text">右上の更新ボタンをタップしましょう。</p>
                                       </div>
                                       <div class="col">
                                         <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
@@ -120,12 +122,12 @@
             <div class="card">
               <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-size:1rem;">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#timetablecollapseTwo" aria-expanded="false" aria-controls="timetablecollapseTwo" style="font-size:1rem;">
                     時間割の手動取得
                   </button>
                 </h5>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div id="timetablecollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#timetableExample">
                 <div class="card-body">
                         <div class="card">
                                 <div class="card-body">
@@ -208,12 +210,12 @@
             <div class="card">
               <div class="card-header" id="headingThree">
                 <h5 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="font-size:1rem;">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#timetablecollapseThree" aria-expanded="false" aria-controls="timetablecollapseThree" style="font-size:1rem;">
                     時間割の手動入力
                   </button>
                 </h5>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div id="timetablecollapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#timetableExample">
                 <div class="card-body">
                   <div class="card">
                     <div class="card-body">
@@ -268,32 +270,667 @@
                 </div>
               </div>
             </div>
-          </div>
 
-            <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="classinfo">　Class Information</p>
-      <div class="row">
-
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#timetablecollapseFour" aria-expanded="false" aria-controls="timetablecollapseFour" style="font-size:1rem;">
+                    授業口コミをする
+                  </button>
+                </h5>
+              </div>
+              <div id="timetablecollapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#timetableExample">
+                <div class="card-body">
+                        <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 1</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">授業口コミをする</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">適当な授業を選択しよう。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">授業口コミをする</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">右上のバーをタップ</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 3</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">授業口コミをする</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">「評価」をタップ。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 4</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">授業口コミをする</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">ドロップダウンを操作して、送信を押すとレビューできます。また、右上の「教員」をタップするとその教員のレビューもできます。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual4.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                </div>
+              </div>
             </div>
 
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#timetablecollapseFive" aria-expanded="false" aria-controls="timetablecollapseFive" style="font-size:1rem;">
+                    友人の時間割を取得
+                  </button>
+                </h5>
+              </div>
+              <div id="timetablecollapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#timetableExample">
+                <div class="card-body">
+                        <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 1</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">友人の時間割を取得</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">今の学期の時間割を表示させた状態で、右上の更新ボタンをタップ。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">友人の時間割を取得</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">続けて右上のシェアボタンをタップ。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 3</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">友人の時間割を取得</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">友人が時間割を公開設定にしていれば、idを入力することで時間割が取得できます。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/manual3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="timetableSix">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#timetablecollapseSix" aria-expanded="false" aria-controls="timetablecollapseSix" style="font-size:1rem;">
+                    出欠
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="timetablecollapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#timetableExample">
+                <div class="card-body">
+                        <div class="card">
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 1</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">出欠</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">曜日をタップ。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">出欠</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">授業名をタップ。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                  <h5 class="card-title">Step 2</h5>
+                                  <h6 class="card-subtitle mb-2 text-muted">出欠</h6>
+                                    <div class="row pt-3">
+                                      <div class="col">
+                                        <p class="card-text">３つのボタンをタップするか、日付の右側をタップして、出欠をとってください。出欠を取り損ねた場合は、自動的に欠席が登録されます。</p>
+                                      </div>
+                                      <div class="col">
+                                        <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                              
+                </div>
+              </div>
+            </div>
+
+          </div>
+<!-- Class Information -->
+            <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="classinfo">　Class Information</p>
+            <div class="accordion mx-n2" id="classInformationExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#classInformationcollapseOne" aria-expanded="false" aria-controls="classInformationcollapseOne" style="font-size:1rem;">
+                        授業検索
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="classInformationcollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#classInformationExample">
+                    <div class="card-body">
+                            <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 1</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">授業検索</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">調べたい授業のキーワード、年度、学期、曜日、学部、時限を埋めます。必ずしも全てを埋める必要はありませんが、多く埋めると待ち時間を短縮できます。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 2</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">授業検索</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">上のバーはカテゴリを表しています。好きなカテゴリを選び、授業をタップしましょう。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 3</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">授業検索</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">授業の内容が見れます。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ここでアコーディオン１つ -->
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#classInformationcollapseTwo" aria-expanded="false" aria-controls="classInformationcollapseTwo" style="font-size:1rem;">
+                        口コミを見る
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="classInformationcollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#classInformationExample">
+                    <div class="card-body">
+                            <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 1</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">口コミを見る</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">授業を検索したら、右上の評価をタップします。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/manual1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 2</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">口コミを見る</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">口コミの結果が見れます。右上の教員を押してみましょう。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/manual2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 3</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">口コミを見る</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">教員に対しての口コミが見れます。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/manual3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- ここでアコーディオン１つ -->
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#classInformationcollapseThree" aria-expanded="false" aria-controls="classInformationcollapseThree" style="font-size:1rem;">
+                        空き教室検索
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="classInformationcollapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#classInformationExample">
+                    <div class="card-body">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Step 1</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">空き教室検索</h6>
+                            <div class="row pt-3">
+                              <div class="col">
+                                <p class="card-text">右下の「空き教室はこちら」をタップ</p>
+                              </div>
+                              <div class="col">
+                                <img src="./data/manual1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Step 2</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">空き教室検索</h6>
+                            <div class="row pt-3">
+                              <div class="col">
+                                <p class="card-text">全ての項目を埋め、検索ボタンを押そう。</p>
+                              </div>
+                              <div class="col">
+                                <img src="./data/manual2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                              </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Step 3</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">空き教室検索</h6>
+                            <div class="row pt-3">
+                              <div class="col">
+                                <p class="card-text">その教室が空いているかどうかが表示されます。</p>
+                              </div>
+                              <div class="col">
+                                <img src="./data/manualInput1.PNG" alt="step3" style="width:auto; height: 10rem;">
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+<!-- Bus -->
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="bus">　Bus</p>
-            <div class="row">
-              
+            <div class="accordion mx-n2" id="busExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#buscollapseOne" aria-expanded="false" aria-controls="buscollapseOne" style="font-size:1rem;">
+                        バス時間の見方
+                      </button>
+                    </h5>
                   </div>
-
+              
+                  <div id="buscollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#busExample">
+                    <div class="card-body">
+                            <div class="card">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 1</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">バス時間の見方</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">右上のドロップダウンからバス時刻表の種類を選びます。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 2</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">バス時間の見方</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">始点と終点を選びます。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                      <h5 class="card-title">Step 3</h5>
+                                      <h6 class="card-subtitle mb-2 text-muted">バス時間の見方</h6>
+                                        <div class="row pt-3">
+                                          <div class="col">
+                                            <p class="card-text">時刻表を見たい場合は、下の時刻表をタップします。</p>
+                                          </div>
+                                          <div class="col">
+                                            <img src="./data/auto3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                          </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- Circle -->
                   <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="circle">　Circle</p>
-            <div class="row">
-              
-                  </div>
-                  
-                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="washemeshi">　WaseMeshi</p>
-            <div class="row">
-              
+            <div class="container">
+              操作方法は省略します。
                   </div>
 
-                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="settings">　Settings</p>
-            <div class="row">
-              
+<!-- Schedule -->
+                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="schedule">　Schedule</p>
+            <div class="container">
+              操作方法は省略します。
                   </div>
+
+<!-- WaseMeshi -->
+                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="washemeshi">　WaseMeshi</p>
+                  <div class="accordion mx-n2" id="waseMeshiExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#waseMeshiCollapseOne" aria-expanded="false" aria-controls="waseMeshiCollapseOne" style="font-size:1rem;">
+                            ワセメシレビュー
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="waseMeshiCollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#waseMeshiExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">ワセメシレビュー</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">上の切り替えボタンを押します。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 2</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">ワセメシレビュー</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">大まかな場所と店名を入力します。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 3</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">ワセメシレビュー</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">すでにその名前がなければ、この画面が表示されます。全て入力し、投稿したらレビューがリアルタイムで反映できます。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 4</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">ワセメシレビュー</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">すでにあった場合は、そのお店を検索し、左下のボタンから同じようにレビューできます。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto3.PNG" alt="step3" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+<!-- Settings -->
+                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="settings">　Settings</p>
+                  <div class="accordion mx-n2" id="settingsExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#settingsCollapseOne" aria-expanded="false" aria-controls="settingsCollapseOne" style="font-size:1rem;">
+                            アカウント登録
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="settingsCollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#settingsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">アカウント登録</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">アカウントを作る場合は、アカウントをタップし、指示に従ってください。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 2</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">アカウント登録</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">授業を公開した場合は、idを友人に教えることでTimetableからその人の時間割を取得できます。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto2.PNG" alt="step2" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#settingsCollapseTwo" aria-expanded="false" aria-controls="settingsCollapseTwo" style="font-size:1rem;">
+                            各種設定
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="settingsCollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#settingsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">各種設定</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">設定からは、時間割を全画面で表示したり、色を変えたり、フォントを変えたりなどあなたの好みに合わせた変更ができます。自分好みにカスタマイズしてください。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+<!-- Tips -->
+                  <p class="mt-5 border-left border-primary" style="font-size:1.3rem;" id="tips">　Tips</p>
+                  <div class="accordion mx-n2" id="tipsExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tipsCollapseOne" aria-expanded="false" aria-controls="tipsCollapseOne" style="font-size:1rem;">
+                            自動コピー
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="tipsCollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#tipsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">自動コピー</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">ClassInfoの各項目をタップすると自動でその内容がコピーされます。URLなどを使いたい際にご利用ください。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tipsCollapseTwo" aria-expanded="false" aria-controls="tipsCollapseTwo" style="font-size:1rem;">
+                            修正
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="tipsCollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#tipsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">修正</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">授業の教室を修正したい場合は、使用教室をタップし、右上からどうぞ。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tipsCollapseThree" aria-expanded="false" aria-controls="tipsCollapseThree" style="font-size:1rem;">
+                            教室表示
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="tipsCollapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#tipsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">教室表示</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">教室をすぐに見たい場合は、左の時限をタップ。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#tipsCollapseFour" aria-expanded="false" aria-controls="tipsCollapseFour" style="font-size:1rem;">
+                            メモ
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="tipsCollapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#tipsExample">
+                        <div class="card-body">
+                                <div class="card">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Step 1</h5>
+                                          <h6 class="card-subtitle mb-2 text-muted">メモ</h6>
+                                            <div class="row pt-3">
+                                              <div class="col">
+                                                <p class="card-text">メモを取りたい場合は、ClassInfoの一番下に「メモ」があるので、これを開き、右上の「Edit」を押してください。</p>
+                                              </div>
+                                              <div class="col">
+                                                <img src="./data/auto1.PNG" alt="step1" style="width:auto; height: 10rem;">
+                                              </div>
+                                            </div>
+                                        </div>
+                                      </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                 
+
           </div>
 
           <nav class="mb-n3" aria-label="breadcrumb">
