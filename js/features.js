@@ -12,7 +12,7 @@ $(window).on('load scroll', function(){
       var scrollPos = $(window).scrollTop();
       var wh = $(window).height();
   
-      if(scrollPos > elemOffset - wh*1.1){
+      if(scrollPos > elemOffset - wh*1.2){
         $(this).addClass(isPlay);
       }
     });
@@ -24,7 +24,7 @@ $(window).on('load scroll', function(){
         var scrollPos = $(window).scrollTop();
         var wh = $(window).height();
     
-        if(scrollPos > elemOffset - wh*1.1){
+        if(scrollPos > elemOffset - wh*1.2){
           $(this).addClass(isPlay);
         }
       });
@@ -36,7 +36,7 @@ $(window).on('load scroll', function(){
         var scrollPos = $(window).scrollTop();
         var wh = $(window).height();
     
-        if(scrollPos > elemOffset - wh*1.1){
+        if(scrollPos > elemOffset - wh*1.2){
           $(this).addClass(isPlay);
         }
       });
@@ -48,7 +48,7 @@ $(window).on('load scroll', function(){
         var scrollPos = $(window).scrollTop();
         var wh = $(window).height();
     
-        if(scrollPos > elemOffset - wh*1.1){
+        if(scrollPos > elemOffset - wh*1.2){
           $(this).addClass(isPlay);
         }
       });
