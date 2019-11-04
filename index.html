@@ -21,10 +21,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>Home</title>
     <meta name="description" content="早大時間割公式サイトです。" />
   </head>
   <body>
+
+
 
     <!--<div class="shadow  mb-3 bg-white rounded">-->
       <!-- ここからナビゲーションバー -->
@@ -73,7 +76,7 @@
         <p class="lead">早大時間割</p>
       </div>
       <div class="eachContent1">
-        <hr class="my-1">
+          <hr style="border:0;border-top:1px solid black">
       </div>
         <div class="eachContent2">
         早大時間割の公式サイトです
@@ -86,47 +89,52 @@
     <!-- ここまでtop -->
 
     <!-- 　　　　　　　　　　　　　　　　　　更新情報はここに　　　　　　　　　　　　　　　　　　　　　　　　　 -->
-    <p class="mb-2 mt-n4 text-center" style="font-size:1rem">更新情報</p>
-    <div class="table-responsive" style="height:8rem; overflow-y:scroll;">
+    <div class="">
+    <p class="mb-2 mt-n4 text-center" style="font-size:0.8rem">更新情報</p>
+  </div>
+    <div class="table-responsive bg-white" style="height:5rem; overflow-y:scroll;">
     <table class="table table-bordered table-sm">
         <thead class="thead-light">
-        <tr><th class="" style="font-size:1rem">日付</th><th class="" style="font-size:1rem">内容</th></tr>
-        <tr><td class="time">11/4</td><td class="update">文言など詳細を埋めました。</td></tr>
-        <tr><td class="time">11/3</td><td class="update">featuresを作りました。</td></tr>
-          <tr><td class="time">11/2</td><td class="update">アニメーションを加えました。</td></tr>
-          <tr><td class="time">11/1</td><td class="update">NavBarについて修正しました</td></tr>
-          <tr><td class="time">10/31</td><td class="update">開発をはじめました</td></tr>
+        <tr><th class="" style="font-size:0.8rem">日付</th><th class="" style="font-size:0.8rem">内容</th></tr>
+        <tr><td class="time" style="font-size:0.8rem">11/4</td><td class="update" style="font-size:0.8rem">文言など詳細を埋めました。ほぼ完成しました。</td></tr>
+        <tr><td class="time" style="font-size:0.8rem">11/3</td><td class="update" style="font-size:0.8rem">featuresを作りました。</td></tr>
+          <tr><td class="time" style="font-size:0.8rem">11/2</td><td class="update" style="font-size:0.8rem">アニメーションを加えました。</td></tr>
+          <tr><td class="time" style="font-size:0.8rem">11/1</td><td class="update" style="font-size:0.8rem">NavBarについて修正しました</td></tr>
+          <tr><td class="time" style="font-size:0.8rem">10/31</td><td class="update" style="font-size:0.8rem">開発をはじめました</td></tr>
         </thead>
       </table>
               </div>
 
-              <div class="bg-info rounded my-3">
-                     <h3 class="text-center text-light">information</h3>
+              <div class="border border-dark mt-2 pb-1">
+                     <h3 class="text-center pt-2">information</h3>
                 </div>
-          
-          <div class="d-flex justify-content-around flex-wrap mt-3">
-        <div class="card mb-3 eachContent1" style="width: 18.5rem;">
+          <div class="back-ground">
+          <div class="d-flex justify-content-around flex-wrap pt-4">
+        <div class="card mb-3 eachContent1 rounded" style="width: 18.5rem;">
             <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Image cap"><title>Placeholder</title><rect fill="#868e96" width="100%" height="100%"/><text fill="#dee2e6" dy=".3em" x="50%" y="50%">Image cap</text></svg>
              -->
-             <img class="mx-auto d-block" width="100%" height="180" src="" alt="test image">
+             <img class="mx-auto d-block" width="100%" height="180" src="./data/features.png" alt="test image">
             <div class="card-body">
               <h5 class="card-title">Features</h5>
+              <hr style="border:0;border-top:1px solid black">
               <p class="card-text">早大時間割の特徴について説明しています。</p>
               <a href="features.html" class="btn btn-primary">詳しく見る</a>
             </div>
           </div>
           <div class="card mb-3 eachContent2" style="width: 18.5rem;">
-              <img class="mx-auto d-block" width="100%" height="180" src="" alt="test image">
+              <img class="mx-auto d-block" width="100%" height="180" src="./data/safety.jpg" alt="test image">
                 <div class="card-body">
                   <h5 class="card-title">Safety</h5>
+                  <hr style="border:0;border-top:1px solid black">
                   <p class="card-text">早大時間割が安全かどうか知りたい方はこちら。</p>
                   <a href="safety.html" class="btn btn-primary">詳しく見る</a>
                 </div>
             </div>
             <div class="card mb-3 eachContent1" style="width: 18.5rem;">
-                <img class="mx-auto d-block" width="100%" height="180" src="" alt="test image">
+                <img class="mx-auto d-block" width="100%" height="180" src="./data/how-to.jpg" alt="test image">
                 <div class="card-body">
                     <h5 class="card-title">How to use</h5>
+                    <hr style="border:0;border-top:1px solid black">
                     <p class="card-text">早大時間割の使い方について知ることができます。</p>
                     <a href="how_to.html" class="btn btn-primary">詳しく見る</a>
                 </div>
@@ -134,23 +142,25 @@
               </div>
               <div class="d-flex justify-content-around flex-wrap">
               <div class="card mb-3 eachContent2" style="width: 18.5rem;">
-                  <img class="mx-auto d-block" width="100%" height="180" src="" alt="test image">
+                  <img class="mx-auto d-block" width="100%" height="180" src="./data/feedback.jpg" alt="test image">
                   <div class="card-body">
                     <h5 class="card-title">Feed back</h5>
+                    <hr style="border:0;border-top:1px solid black">
                     <p class="card-text">フィードバックはこちらからお願いします。</p>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVjh-HQoZ1SeRyyFx3vAO-HT7AY6-2ze7VvrxifrojnDgw0A/viewform?usp=sf_link" class="btn btn-primary">フォームへ</a>
                   </div>
                 </div>
                 <div class="card mb-3 eachContent1" style="width: 18.5rem;">
-                    <img class="mx-auto d-block" width="100%" height="180" src="" alt="test image">
+                    <img class="mx-auto d-block" width="100%" height="180" src="./data/review.jpg" alt="test image">
                     <div class="card-body">
                       <h5 class="card-title">Class reviews</h5>
+                      <hr style="border:0;border-top:1px solid black">
                       <p class="card-text">みなさんから集まった授業口コミはこちら。<br>（準備中です）</p>
                       <a class="btn btn-primary">Comming soon</a>
                     </div>
                   </div>
                 </div>
-
+              </div>
         <!-- ここまでmain -->
 
         <div id="foot">

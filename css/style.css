@@ -91,3 +91,7 @@ body {
   animation-duration: 2s;/* アニメーション時間 */
   animation-name: SlideUp;/* アニメーション名 */
 }
+
+body{
+  font-family: "ＭＳ ゴシック",sans-serif;
+}
