@@ -35,7 +35,7 @@ body {
 @keyframes RightToLeft {
   0% {
       opacity: 0;/* 透明 */
-      transform: translateX(100px);/* X軸方向に50px */
+      transform: translateX(50px);/* X軸方向に50px */
   }
   100% {
       opacity: 1;/* 不透明 */
@@ -45,7 +45,7 @@ body {
   @keyframes LeftToRight {
     0% {
         opacity: 0;/* 透明 */
-        transform: translateX(-100px);/* X軸方向に50px */
+        transform: translateX(-50px);/* X軸方向に50px */
     }
     100% {
         opacity: 1;/* 不透明 */
@@ -78,24 +78,24 @@ body {
   }
 
 .isPlay {
-  animation-duration: 3s;/* アニメーション時間 */
+  animation-duration: 2s;/* アニメーション時間 */
   animation-name: RightToLeft;/* アニメーション名 */
 }
 
 .play-1{
-  animation-duration: 2s;/* アニメーション時間 */
+  animation-duration: 1.5s;/* アニメーション時間 */
   animation-name: RightToLeft;/* アニメーション名 */
 }
 .play-2{
-  animation-duration: 2s;/* アニメーション時間 */
+  animation-duration: 1.5s;/* アニメーション時間 */
   animation-name: LeftToRight;/* アニメーション名 */
 }
 .play-3{
-  animation-duration: 2s;/* アニメーション時間 */
+  animation-duration: 1.5s;/* アニメーション時間 */
   animation-name: SlideDown;/* アニメーション名 */
 }
 .play-4{
-  animation-duration: 2s;/* アニメーション時間 */
+  animation-duration: 1.5s;/* アニメーション時間 */
   animation-name: SlideUp;/* アニメーション名 */
 }
 
