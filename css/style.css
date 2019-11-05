@@ -9,11 +9,18 @@ body {
     font-size: 130%;
   }
 
-  .facebook:before {
+  .google:before {
     font-family: "Font Awesome 5 Brands";
-    content: '\f082';
-    color: rgb(12, 73, 128);
-    font-size: 130%;
+    content: '\f3ab';
+    color: rgb(0, 0, 0);
+    font-size: 110%;
+  }
+
+  .apple:before {
+    font-family: "Font Awesome 5 Brands";
+    content: '\f179';
+    color: rgb(0, 0, 0);
+    font-size: 150%;
   }
 
   .insta:before {
