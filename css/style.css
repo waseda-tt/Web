@@ -71,7 +71,7 @@ body {
   }
 
 .isPlay {
-  animation-duration: 4s;/* アニメーション時間 */
+  animation-duration: 3s;/* アニメーション時間 */
   animation-name: RightToLeft;/* アニメーション名 */
 }
 

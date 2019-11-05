@@ -34,6 +34,9 @@ else {
         case "#how_to":
           $("#whatPage").html("HowToUse")
         break;
+        case "#media":
+          $("#whatPage").html("Media")
+        break;
   }
   });
 }
