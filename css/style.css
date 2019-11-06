@@ -77,6 +77,18 @@ body {
   }
   }
 
+   /*ワセメシ*/
+   @keyframes Gradation {
+    0% {
+        opacity: 0;/* 透明 */
+        transform: translateY(50px);/* Y軸方向に50px */
+    }
+    100% {
+        opacity: 1;/* 不透明 */
+        transform: translateY(0);/* Y軸方向に0px */
+    }
+    }
+
 .isPlay {
   animation-duration: 2s;/* アニメーション時間 */
   animation-name: RightToLeft;/* アニメーション名 */
@@ -97,6 +109,11 @@ body {
 .play-4{
   animation-duration: 1.5s;/* アニメーション時間 */
   animation-name: SlideUp;/* アニメーション名 */
+}
+
+.waseMeshiRandom{
+  animation-duration: 3s;/* アニメーション時間 */
+  animation-name: Gradation;/* アニメーション名 */
 }
 
 body{

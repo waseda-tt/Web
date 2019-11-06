@@ -37,6 +37,12 @@ else {
         case "#media":
           $("#whatPage").html("Media")
         break;
+        case "#waseMeshi":
+          $("#whatPage").html("WaseMeshi")
+        break;
+        case "#reviews":
+          $("#whatPage").html("Reviews")
+        break;
   }
   });
 }
