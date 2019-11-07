@@ -9,12 +9,6 @@ $(function () {
          }
 
         function Show(place,check){
-            if(!check){
-            
-            }
-            else{
-                
-            }
            //JSONデータを読み込みます
             $.getJSON("./data/wasemeshi.json", function (data) {
            //JSONの中のデータの個数を変数化し、1件以上の場合は出力します（0件の場合返り値が無いため）
