@@ -2,26 +2,36 @@ $(function () {
     Show('全て',false);
          }); 
 
+         //ボタンを押した時
          function Push(){
            var place = $("#placeFormControlSelect option:selected").text();
            var check = $("#randomCheck").prop("checked");
-           Show(place,check);
+           var key = $("#inputKeyword").val();
+           if(key==null||key==""){
+             key="All";
+           }
+           Show(place,check,key);
          }
 
-        function Show(place,check){
+        function Show(place,check,key){
            //JSONデータを読み込みます
             $.getJSON("./data/wasemeshi.json", function (data) {
            //JSONの中のデータの個数を変数化し、1件以上の場合は出力します（0件の場合返り値が無いため）
                 var infoCount = data.waseMeshis.length;
                 //1件以上ある場合
                 if (infoCount >= '1') {
-                    if(!check){
+                 
+                    if(!check){//テックが入っていない時
                         //中を空欄にCSSで非表示にします（初期設定）
             $('div.infoList').html('');
             $('.infoList').css('display', 'none');
             $('.randomList').css('display', 'none');
+            var cardCount=0;
                     $(data.waseMeshis).each(function () {//waseMeshisの配列で繰り返す
+                      
                         if(place==this.Place || place=="全て"){
+                          if(this.Name.match(key)||key=="All"){//キーワードが含まれている時、もしくはキーワードが指定されていない時
+                            cardCount++;
                             $('.infoList').css('display', 'block');
                             var comment = "";
                             for(var i=0;i<this.Comment.length;i++){//Commentの配列で繰り返す
@@ -49,8 +59,26 @@ $(function () {
                               '</div>'+
                               '</div>'+
                             '</div>').appendTo('div.infoList');
+                          }
                         }
+                        
                     })
+                    if(cardCount=='0'){//一件もなかった時
+                      $('.infoList').css('display', 'block');
+                      $('<div class="card h-100 mb-4 pb-5">'+
+                            '<div class="card-body">'+
+                              '<div class="text-center"><h5 class="card-title"><strong>' + '見つかりませんでした' + '</strong></h5>'+
+                              '</div>' +
+                              '<hr class="rounded" style="border:0;border-top:3px solid rgb(200, 200, 200);">'+
+                              '</div>'+
+                              '<div class="card-text container">' + 
+                              '<div class="container mt-n3">' +//mtは調整
+                              "検索条件を変更してみてください<br>口コミはリアルタイムではないのでご注意ください" +
+                              '</div>'+
+                              '</div>'+
+                            '</div>').appendTo('div.infoList');
+                    }
+                    
                 }
                 else{
                     $('div.randomList').html('');
@@ -58,14 +86,17 @@ $(function () {
                     var count = 0;
                     $(data.waseMeshis).each(function () {//waseMeshisの配列で繰り返す
                         if(place==this.Place || place=="全て"){
+                          if(this.Name.match(key)||key=="All"){//キーワードが含まれている時、もしくはキーワードが指定されていない時 
                             count++;
                         }
+                      }
                     })
-                    
+                    if(count>0){
                     var random = Math.floor(Math.random() * count);//randomは0~count-1?
                     var increment = 0;
                     for(var i=0;i<data.waseMeshis.length;i++){
-                        if(place==data.waseMeshis[i].Place || place=="全て"){ 
+                        if(place==data.waseMeshis[i].Place || place=="全て"){
+                          if(data.waseMeshis[i].Name.match(key)||key=="All"){//キーワードが含まれている時、もしくはキーワードが指定されていない時 
                             if(random==increment){
                             $('.randomList').css('display', 'block');
                             var comment = "";
@@ -101,7 +132,25 @@ $(function () {
                     }
                     }
 
-                    $('div.infoList').html('');
+                    
+                  }
+                }
+                else{
+                  $('.randomList').css('display', 'block');
+                  $('<div class="card h-100 mb-4 pb-5">'+
+                  '<div class="card-body">'+
+                    '<div class="text-center"><h5 class="card-title"><strong>' + '見つかりませんでした' + '</strong></h5>'+
+                    '</div>' +
+                    '<hr class="rounded" style="border:0;border-top:3px solid rgb(200, 200, 200);">'+
+                    '</div>'+
+                    '<div class="card-text container">' + 
+                    '<div class="container mt-n3">' +//mtは調整
+                    "検索条件を変更してみてください<br>口コミはリアルタイムではないのでご注意ください" +
+                    '</div>'+
+                    '</div>'+
+                  '</div>').appendTo('div.randomList');
+                }
+                  $('div.infoList').html('');
                 }
             }
             })
