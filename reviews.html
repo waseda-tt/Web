@@ -93,8 +93,46 @@
                             <div class="card-body">
                               <h5 class="card-title"><strong>Class</strong></h5>
                               <hr style="border:0;border-top:1px solid black">
-                              <p class="card-text">授業の口コミはこちら。<br>（準備中です）</p>
-                              <a class="btn btn-primary">Coming soon</a>
+                              <p class="card-text">授業の口コミはこちら。</p>
+                              <div class="row">
+                              <div class="col">
+                                <a href="class.html" class="btn btn-primary">詳しく見る</a>
+                            </div>
+
+                            <div class="col">
+
+                              <button type="button" class="btn btn-secondary text-white" data-toggle="modal" data-target="#WaseMeshiModal">
+                                  元データ
+                                </button>
+                          <!-- Modal -->
+<div class="modal fade" id="WaseMeshiModal" tabindex="-1" role="dialog" aria-labelledby="ダウンロード" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+          <div class="p-1 bd-highlight">
+        <h5 class="modal-title" id="exampleModalCenterTitle">ダウンロード</h5>
+          </div>
+      </div>
+      <div class="modal-body">
+          <div class="d-flex flex-column bd-highlight mb-3">
+
+                <div class="p-1 bd-highlight mb-3 text-center">
+                    こちらのデータは、理由を問わずご自由にご利用なさって構いません。<br> ただし、分かる位置に著作権表示<br>© 2019 早大時間割<br> をお願いいたします。<br>json形式になっています。
+                    </div>
+                    <div>
+                    <a href="./data/class.json" class="btn btn-primary btn-block">ダウンロードする</a>
+                  </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+                        </div>
+                      </div>
+
                             </div>
                         </div>
                           </div>

@@ -43,6 +43,9 @@ else {
         case "#reviews":
           $("#whatPage").html("Reviews")
         break;
+        case "#class":
+          $("#whatPage").html("Class")
+        break;
   }
   });
 }
