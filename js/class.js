@@ -1,7 +1,7 @@
 $(function () {
     $("input[name=what]").val(["0"]);
     $("input[name=radio]").val(["1"]);
-    Show("全て");
+    Show("全て","0","1");
          }); 
 
          //ボタンを押した時
