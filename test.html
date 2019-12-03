@@ -15,16 +15,16 @@
         function launchApp() {
             var IOS_SCHEME = 'com.KASAI.Wapp';
             var IOS_STORE = 'https://apps.apple.com/us/app/waseda-uni-timetable/id1457326871?l=ja&ls=1';
-            var ANDROID_SCHEME = 'comkasaiwapp://';
+            var ANDROID_SCHEME = 'comkasaiwapp://open/';
             var ANDROID_PACKAGE = 'com.KASAI.Wapp';
             var PC_SITE = 'https://waseda-tt.github.io/Web/'
 
             var userAgent = navigator.userAgent.toLowerCase();
             // iPhone端末ならアプリを開くかApp Storeを開く。
             if (userAgent.search(/iphone|ipad|ipod/) > -1) {
-                location.href = IOS_STORE;
+                location.href = IOS_SCHEME + '://';
                 setTimeout(function() {
-                    location.href = IOS_SCHEME + '://';
+                    location.href = IOS_STORE;   
                 }, 500);
             }
             // Android端末ならアプリを開くかGoogle Playを開く。
