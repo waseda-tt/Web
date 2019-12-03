@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>アプリ起動サンプル</title>
+    <title>早大時間割 リダイレクト</title>
 </head>
 <body>
 
@@ -22,14 +22,14 @@
             var userAgent = navigator.userAgent.toLowerCase();
             // iPhone端末ならアプリを開くかApp Storeを開く。
             if (userAgent.search(/iphone|ipad|ipod/) > -1) {
-                launch_frame.location.href = IOS_SCHEME + '://';
+                location.href = IOS_SCHEME + '://';
                 setTimeout(function() {
                     location.href = IOS_STORE;
-                }, 3000);
+                }, 500);
             }
             // Android端末ならアプリを開くかGoogle Playを開く。
             else if (userAgent.search(/android/) > -1) {
-                document.location = 'intent://#Intent;scheme=' + ANDROID_SCHEME
+                location.href = 'intent://#Intent;scheme=' + ANDROID_SCHEME
                         + ';package=' + ANDROID_PACKAGE + ';end';
             }
             // その他・不明・PCなどの場合はサイトを開く。
