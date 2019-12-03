@@ -22,9 +22,9 @@
             var userAgent = navigator.userAgent.toLowerCase();
             // iPhone端末ならアプリを開くかApp Storeを開く。
             if (userAgent.search(/iphone|ipad|ipod/) > -1) {
-                location.href = IOS_SCHEME + '://';
+                location.href = IOS_STORE;
                 setTimeout(function() {
-                    location.href = IOS_STORE;
+                    location.href = IOS_SCHEME + '://';
                 }, 500);
             }
             // Android端末ならアプリを開くかGoogle Playを開く。
