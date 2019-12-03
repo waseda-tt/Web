@@ -21,20 +21,25 @@
 
             var userAgent = navigator.userAgent.toLowerCase();
             // iPhone端末ならアプリを開くかApp Storeを開く。
-            if (userAgent.search(/iphone|ipad|ipod/) > -1) {
+            if (userAgent.indexOf("iphone") >= 0|| userAgent.indexOf("ipad") >= 0|| userAgent.indexOf("ipod") >= 0) {
                 location.href = IOS_SCHEME + '://';
                 setTimeout(function() {
                     location.href = IOS_STORE;   
                 }, 500);
+
+                alert("ios")
             }
             // Android端末ならアプリを開くかGoogle Playを開く。
-            else if (userAgent.search(/android/) > -1) {
+            else if (userAgent.indexOf("android") > 0) {
                 location.href = 'intent://open#Intent;scheme=' + ANDROID_SCHEME
                         + ';package=' + ANDROID_PACKAGE + ';end;';
+
+                        alert("android")
             }
             // その他・不明・PCなどの場合はサイトを開く。
             else {
-                document.location = PC_SITE;
+                location.href = PC_SITE;
+                alert("other")
             }
         }
 
