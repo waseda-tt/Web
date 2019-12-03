@@ -9,12 +9,15 @@
 <body>
 
     <div class="container-fluid mt-5">
-        <div class="row justify-content-center">
-            <div class="col">
-                <a id="store" href="" class="btn btn-primary btn-lg btn-block">ストアページへ</a>
+        <div class="row justify-content-center row-height">
+            <div class="col ios">
+                <a id="store" href="" class="btn btn-primary btn-lg btn-block">ストアへ</a>
             </div>
-            <div class="col">
+            <div class="col ios">
                 <a id="app" href="" class="btn btn-primary btn-lg btn-block">アプリを起動</a>
+            </div>
+            <div class="col android">
+                <a id="all" href="" class="btn btn-primary btn-lg btn-block">移動する</a>
             </div>
         </div>
     </div>
@@ -32,21 +35,20 @@
             // iPhone端末ならアプリを開くかApp Storeを開く。
             if (userAgent.indexOf("iphone") >= 0|| userAgent.indexOf("ipad") >= 0|| userAgent.indexOf("ipod") >= 0) {
 
+                $('.android').hide();
                 $('#store').attr('href', IOS_STORE);
                 $('#app').attr('href', IOS_SCHEME);
             }
             // Android端末ならアプリを開くかGoogle Playを開く。
             else if (userAgent.indexOf("android") > 0) {
-
-                $('#store').attr('href', 'intent://open#Intent;scheme=' + ANDROID_SCHEME
-                        + ';package=' + ANDROID_PACKAGE + ';end;');
-                $('#app').attr('href', 'intent://open#Intent;scheme=' + ANDROID_SCHEME
+                $('.ios').hide();
+                $('#all').attr('href', 'intent://open#Intent;scheme=' + ANDROID_SCHEME
                         + ';package=' + ANDROID_PACKAGE + ';end;');
             }
             // その他・不明・PCなどの場合はサイトを開く。
             else {
-                $('#store').hide();
-                $('#app').hide();
+                $('.ios').hide();
+                $('.android').hide();
                 location.href = PC_SITE;
             }
         }
