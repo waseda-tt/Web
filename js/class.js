@@ -75,7 +75,6 @@ $(function () {
                               '<hr class="rounded" style="border:0;border-top:3px solid rgb(200, 200, 200);">'+
                               '</div>'+
                               '<div class="card-text container">' + 
-                              '<hr style="border:0;border-top:1px solid rgb(200, 200, 200);">'+
                               '<div class="container">' +
                               content +
                               '</div>'+
@@ -137,8 +136,8 @@ $(function () {
                 }
             }
             content = content/(jsonContents.length*5)*100;//安い
-            var result = '内容:'+Math.round(content)+'<div class="progress">'+
-            '<div class="progress-bar bg-warning" role="progressbar" style="width:'+content+'%" aria-valuenow="'+content+'" aria-valuemin="0" aria-valuemax="100">'+ jsonContents.length + '件'+'</div>'+
+            var result = '内容:'+Math.round(content/100*5)+'<div class="progress">'+
+            '<div class="progress-bar bg-warning" role="progressbar" style="width:'+content+'%" aria-valuenow="'+content+'" aria-valuemin="0" aria-valuemax="5">'+ jsonContents.length + '件'+'</div>'+
             '</div>'
             return result;
           }
@@ -167,8 +166,8 @@ $(function () {
                 }
             }
             easy = easy/(jsonEasies.length*5)*100;
-            var result = '楽単度:'+Math.round(easy)+'<div class="progress">'+
-            '<div class="progress-bar bg-warning" role="progressbar" style="width:'+easy+'%" aria-valuenow="'+easy+'" aria-valuemin="0" aria-valuemax="100">'+ jsonEasies.length + '件'+'</div>'+
+            var result = '楽単度:'+Math.round(easy/100*5)+'<div class="progress">'+
+            '<div class="progress-bar bg-warning" role="progressbar" style="width:'+easy+'%" aria-valuenow="'+easy+'" aria-valuemin="0" aria-valuemax="5">'+ jsonEasies.length + '件'+'</div>'+
             '</div>'
             return result;
           }
@@ -197,8 +196,8 @@ $(function () {
                 }
             }
            report = report/(jsonReports.length*5)*100;//悪い
-           var result = 'レポート量:'+Math.round(report)+'<div class="progress">'+
-           '<div class="progress-bar bg-warning" role="progressbar" style="width:'+report+'%" aria-valuenow="'+report+'" aria-valuemin="0" aria-valuemax="100">'+ jsonReports.length + '件'+'</div>'+
+           var result = 'レポート量:'+Math.round(report/100*5)+'<div class="progress">'+
+           '<div class="progress-bar bg-warning" role="progressbar" style="width:'+report+'%" aria-valuenow="'+report+'" aria-valuemin="0" aria-valuemax="5">'+ jsonReports.length + '件'+'</div>'+
            '</div>'
             return result;
           }
