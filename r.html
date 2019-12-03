@@ -45,6 +45,8 @@
             }
             // その他・不明・PCなどの場合はサイトを開く。
             else {
+                $('#store').hide();
+                $('#app').hide();
                 location.href = PC_SITE;
             }
         }
