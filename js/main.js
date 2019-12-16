@@ -46,6 +46,9 @@ else {
         case "#class":
           $("#whatPage").html("Class")
         break;
+        case "#professor":
+          $("#whatPage").html("Professor")
+        break;
   }
   });
 }

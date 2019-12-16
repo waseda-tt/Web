@@ -43,7 +43,7 @@
                   <!-- 一覧表示される -->
                   <div class="d-flex justify-content-around flex-wrap pt-4">
                     <div class="card mb-3 eachContent1 rounded" style="width: 18.5rem;">
-                         <img class="mx-auto d-block" width="100%" height="180" src="./data/waseMeshi.jpg" alt="test image">
+                         <img class="mx-auto d-block" width="100%" height="180" src="./data/waseMeshi.jpg" alt="wasemeshi">
                         <div class="card-body">
                           <h5 class="card-title"><strong>WaseMeshi</strong></h5>
                           <hr style="border:0;border-top:1px solid black">
@@ -89,7 +89,7 @@
                         </div>
                       </div>
                       <div class="card mb-3 eachContent2" style="width: 18.5rem;">
-                          <img class="mx-auto d-block" width="100%" height="180" src="./data/class.jpg" alt="test image">
+                          <img class="mx-auto d-block" width="100%" height="180" src="./data/class.jpg" alt="class">
                             <div class="card-body">
                               <h5 class="card-title"><strong>Class</strong></h5>
                               <hr style="border:0;border-top:1px solid black">
@@ -135,6 +135,56 @@
 
                             </div>
                         </div>
+
+                        <div class="card mb-3 eachContent2" style="width: 18.5rem;">
+                            <img class="mx-auto d-block" width="100%" height="180" src="./data/professor.jpg" alt="professor">
+                              <div class="card-body">
+                                <h5 class="card-title"><strong>Professor</strong></h5>
+                                <hr style="border:0;border-top:1px solid black">
+                                <p class="card-text">教員の口コミはこちら。</p>
+                                <div class="row">
+                                <div class="col">
+                                  <a href="professor.html" class="btn btn-primary">詳しく見る</a>
+                              </div>
+  
+                              <div class="col">
+  
+                                <button type="button" class="btn btn-secondary text-white" data-toggle="modal" data-target="#ProfessorModal">
+                                    元データ
+                                  </button>
+                            <!-- Modal -->
+  <div class="modal fade" id="ProfessorModal" tabindex="-1" role="dialog" aria-labelledby="ダウンロード" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <div class="p-1 bd-highlight">
+          <h5 class="modal-title" id="exampleModalCenterTitle">ダウンロード</h5>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="d-flex flex-column bd-highlight mb-3">
+  
+                  <div class="p-1 bd-highlight mb-3 text-center">
+                      こちらのデータは、理由を問わずご自由にご利用なさって構いません。<br> ただし、分かる位置に著作権表示<br>© 2019 早大時間割<br> をお願いいたします。<br>json形式になっています。
+                      </div>
+                      <div>
+                      <a href="./data/professor.json" class="btn btn-primary btn-block">ダウンロードする</a>
+                    </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                          </div>
+                        </div>
+  
+                              </div>
+                          </div>
+
+
                           </div>
 
       <nav class="mb-n3" aria-label="breadcrumb">

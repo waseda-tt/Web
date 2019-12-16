@@ -29,7 +29,7 @@ $(function () {
             $('div.infoList').html('');
             $('.infoList').css('display', 'none');
             var cardCount=0;
-                    $(data.departments).each(function () {//waseMeshisの配列で繰り返す
+                    $(data.departments).each(function () {//departmentsの配列で繰り返す
                         if(this.Classes.length>0){
                         if((department==this.Classes[0].department) || department=='全て'){
                             

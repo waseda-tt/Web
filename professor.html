@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta property="og:title" content="早大時間割　授業" />
+    <meta property="og:title" content="早大時間割　教員" />
     <meta property="og:description" content="早大時間割の公式サイトです。このサイトでは、早大時間割の特徴、使い方、誰が運営しているのか、ワセメシ、広告など早大時間割に関する情報を載せています。" />
     <meta property="og:type" content="website" />
 <meta property="og:image" content="./data/logo.png" />
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/class.css">
-    <title>Class</title>
+    <link rel="stylesheet" href="./css/professor.css">
+    <title>Professor</title>
   </head>
   <body>
 
@@ -34,9 +34,9 @@
     
             <div class="jumbotron jumbotron-fluid">
                     <div class="container">
-                      <h1 class="display-4">Class</h1>
-                      <p class="lead">授業</p>
-                      <p class="lead" style="font-size: 1rem;">授業口コミをまとめました。<br>レビューをしたい場合は、アプリからどうぞ。やり方は<a href="./how_to.html#timetable">こちら</a></p>
+                      <h1 class="display-4">Professor</h1>
+                      <p class="lead">教員</p>
+                      <p class="lead" style="font-size: 1rem;">教員口コミをまとめました。<br>レビューをしたい場合は、アプリからどうぞ。やり方は<a href="./how_to.html#timetable">こちら</a></p>
                     </div>
                   </div>
 
@@ -92,29 +92,18 @@
                                         <option value="38">留学</option>
                                         <option value="39">グローバル</option>
                                       </select>
-                                      <small  class="form-text text-muted">学部を選べます。</small>
+                                      <small  class="form-text text-muted mb-3">学部を選べます。</small>
+
+                                      <div class="input-group-prepend">
+                                          <span class="input-group-text" id="inputGroup-sizing-sm">教員名</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="inputKeyword" aria-describedby="keywordHelp" placeholder="Enter keyword">
+      <small class="form-text text-muted mb-3">教員名を入力できます。</small>
 
                                 </div>
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="inputGroup-sizing-sm">ソート</span>
-                                  </div>
-                                  <div class="form-group form-check mt-2 ml-n3">
-                                    <label class="radio-inline"><input type="radio" name="what" id="what1" value="0">内容</label>
-                                    <label class="radio-inline"><input type="radio" name="what" id="what2" value="1">楽単度</label>
-                                    <label class="radio-inline"><input type="radio" name="what" id="what3" value="2">レポート量</label>
-                                    <small  class="form-text text-muted my-n1">何でソートするか選んでください。</small>
-                                  </div>
-                                      <div class="form-group form-check ml-n3">
-                                            <label class="radio-inline"><input type="radio" name="radio" id="radio1" value="1">昇順</label>
-                                            <label class="radio-inline"><input type="radio" name="radio" id="radio2" value="-1">降順</label>
-                                            <small  class="form-text text-muted my-n1">昇順か降順か選べます。</small>
-                                          </div>
                               </div>
                               <hr style="border:0;border-top:1px solid rgb(200, 200, 200);">
-                          <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Push()">表示</button>
-                          <small  class="form-text text-muted mt-3">内容:5に近いほど、充実しています。</small>
-                          <small  class="form-text text-muted">楽単度:5に近いほど、楽です。</small>
-                          <small  class="form-text text-muted">レポート量:5に近いほど、大変です。</small>
+                              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="Push()">表示</button>
                         </form>
                         </div>
                         
@@ -122,9 +111,7 @@
 
                   <p class="mt-5 border-left border-white text-white" style="font-size:1.3rem;">　検索結果</p>
                    <!-- 一覧表示される -->
-                  
                       <div class="infoList">
-
                       </div>
                   </div>
 
@@ -132,7 +119,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item" style="font-size: 0.8rem;"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item" style="font-size: 0.8rem;"><a href="reviews.html">Reviews</a></li>
-          <li class="breadcrumb-item active" aria-current="page" style="font-size: 0.8rem;">Class</li>
+          <li class="breadcrumb-item active" aria-current="page" style="font-size: 0.8rem;">Professor</li>
         </ol>
       </nav>
     <!-- ここまでmain -->
@@ -146,6 +133,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/main.js"></script> 
-    <script type="text/javascript" src="./js/class.js"></script> 
+    <script type="text/javascript" src="./js/professor.js"></script> 
   </body>
 </html>
