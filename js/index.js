@@ -89,7 +89,7 @@ $(window).on('load scroll', function(){
                 opacity: [ 1,'easeInExpo', 0 ]
             }, {
                 // // Option
-                duration: 3000, // アニメーション時間
+                duration: 1500, // アニメーション時間
                 easing: 'easeOutSine', // イージング : linear, swing, ease, ease-in, ease-out, ease-in-out, [200, 15]
                 begin: function(){}, // or null
                 progress: null, // 進捗率
@@ -109,7 +109,7 @@ $(window).on('load scroll', function(){
                 opacity: [ 1,'easeInExpo', 0 ]
             }, {
                 // // Option
-                duration: 2000, // アニメーション時間
+                duration: 1500, // アニメーション時間
                 easing: 'easeOutSine', // イージング : linear, swing, ease, ease-in, ease-out, ease-in-out, [200, 15]
                 progress: null, // 進捗率
                  loop: false, // 繰り返し : or false
