@@ -1,5 +1,3 @@
-
-
 var isAnimated = [false,false,false,false,false,false,false,false,false];
 $(window).on('load scroll', function(){
 
