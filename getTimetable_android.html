@@ -45,14 +45,14 @@
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作2</p>
       <div class="row">
-        <p class="mx-3">青いボタンをタップしてテキストをコピーする</p>
-        <div style="text-align : right"><button class="btn btn-primary" onclick="copyToClipboard()">ここをタップ</button></div>
-        <div ><input id="copyTarget" type="text" value='javascript:var global=window;global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");a.textContent=document.body.outerHTML;var b=document.getElementsByTagName("body")[0];b.appendChild(a);a.contentEditable=!0;a.readOnly=!1;a.setSelectionRange(0,999999);document.execCommand("copy");b.removeChild(a)};global.COPY_TO_CLIPBOARD.copyToClipboard();' readonly></div>
+        <p class="mx-3">青いボタンをタップしてテキストをコピーする。</p>
+        <p style="text-align : right"><button class="btn btn-primary" onclick="copyToClipboard()">ここをタップ</button></p>
+        <p ><input id="copyTarget" type="text" value='javascript:var global=window;global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");a.textContent=document.body.outerHTML;var b=document.getElementsByTagName("body")[0];b.appendChild(a);a.contentEditable=!0;a.readOnly=!1;a.setSelectionRange(0,999999);document.execCommand("copy");b.removeChild(a)};global.COPY_TO_CLIPBOARD.copyToClipboard();' readonly></p>
           </div>
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作3</p>
       <div class="row">
-        <p class="mx-3">先ほどお気に入りにしたものの編集画面を開く。URL部分をコピーしたものと全て置き換える</p>
+        <p class="mx-3">先ほどお気に入りにしたものの編集画面を開く。URL部分をコピーしたものと全て置き換える。</p>
             </div>
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作4</p>
@@ -122,7 +122,7 @@
             document.execCommand("Copy");
 
             // コピーをお知らせする
-            alert("コピーできました！ : " + copyTarget.value);
+            alert("コピーされました");
         }
     </script>
 
