@@ -55,17 +55,15 @@
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);">
     <p style="margin: 0; 
-    padding: 0;">javascript:var global=window;
-    global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
-    global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
-    a.textContent=document.body.outerHTML;
-    var b=document.getElementsByTagName("body")[0];
-    b.appendChild(a);
-    a.contentEditable=!0;
-    a.readOnly=!1;
-    a.setSelectionRange(0,999999);document.execCommand("copy");
-    b.removeChild(a)};
-    global.COPY_TO_CLIPBOARD.copyToClipboard();</p>
+    padding: 0;">javascript:var global=window; global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{}; global.COPY_TO_CLIPBOARD.copyToClipboard=function(){
+var copyFrom = document.createElement("textarea");
+copyFrom.textContent = document.body.outerHTML;
+var bodyElm = document.getElementsByTagName("body")[0];
+bodyElm.appendChild(copyFrom);
+copyFrom.select();
+document.execCommand('copy');
+bodyElm.removeChild(copyFrom)};
+global.COPY_TO_CLIPBOARD.copyToClipboard();</p>
 </div>
           </div>
 
