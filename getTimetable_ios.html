@@ -45,10 +45,29 @@
             </div>
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作2</p>
+            <div class="container">
       <div class="row">
-        <p class="mx-3">青いボタンをタップしてテキストをコピーする</p>
-        <div style="text-align : right"><button class="btn btn-primary" onclick="copyToClipboard()">ここをタップ</button></div>
-        <div ><input id="copyTarget" type="text" value='javascript:var global=window;global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");a.textContent=document.body.outerHTML;var b=document.getElementsByTagName("body")[0];b.appendChild(a);a.contentEditable=!0;a.readOnly=!1;a.setSelectionRange(0,999999);document.execCommand("copy");b.removeChild(a)};global.COPY_TO_CLIPBOARD.copyToClipboard();' readonly></div>
+        <p class="mx-3">以下のテキストを全てコピーする</p>
+        </div>
+        <div class="box" style="padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);">
+    <p style="margin: 0; 
+    padding: 0;">javascript:var global=window;
+    global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
+    global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
+    a.textContent=document.body.outerHTML;
+    var b=document.getElementsByTagName("body")[0];
+    b.appendChild(a);
+    a.contentEditable=!0;
+    a.readOnly=!1;
+    a.setSelectionRange(0,999999);document.execCommand("copy");
+    b.removeChild(a)};
+    global.COPY_TO_CLIPBOARD.copyToClipboard();</p>
+</div>
           </div>
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作3</p>
@@ -112,21 +131,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/main.js"></script> 
   </body>
-
-   <script>
-        function copyToClipboard() {
-            // コピー対象をJavaScript上で変数として定義する
-            var copyTarget = document.getElementById("copyTarget");
-
-            // コピー対象のテキストを選択する
-            copyTarget.select();
-
-            // 選択しているテキストをクリップボードにコピーする
-            document.execCommand("Copy");
-
-            // コピーをお知らせする
-            alert("コピーされました");
-        }
-    </script>
-
 </html>
