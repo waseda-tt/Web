@@ -25,10 +25,10 @@
     <script>
         // アプリを開く。アプリがインストールされていなければサイトを開く。
         function launchApp() {
-            var IOS_SCHEME = 'com.KASAI.Wapp://';
-            var IOS_STORE = 'https://apps.apple.com/us/app/waseda-uni-timetable/id1457326871?l=ja&ls=1';
-            var ANDROID_SCHEME = 'comkasaiwapp';
-            var ANDROID_PACKAGE = 'com.KASAI.Wapp';
+            var IOS_SCHEME = 'com.KASAI.wasedaApp://';
+            var IOS_STORE = 'https://apps.apple.com/us/app/waseda-uni-timetable/id1509213667?l=ja&ls=1';
+            var ANDROID_SCHEME = 'sodai';
+            var ANDROID_PACKAGE = 'com.KASAI.wasedaApp';
             var PC_SITE = './'
 
             var userAgent = navigator.userAgent.toLowerCase();
@@ -42,7 +42,7 @@
             // Android端末ならアプリを開くかGoogle Playを開く。
             else if (userAgent.indexOf("android") > 0) {
                 $('.ios').hide();
-                $('#all').attr('href', 'intent://open#Intent;scheme=' + ANDROID_SCHEME
+                $('#all').attr('href', 'intent://Jikanwari#Intent;scheme=' + ANDROID_SCHEME
                         + ';package=' + ANDROID_PACKAGE + ';end;');
             }
             // その他・不明・PCなどの場合はサイトを開く。
