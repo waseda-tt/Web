@@ -59,8 +59,7 @@
     padding: 0;">javascript:var global=window;
     global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
     global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
-    var cookies = document.cookie;
-    a.textContent = cookies;
+    a.textContent=document.cookie;
     var b=document.getElementsByTagName("body")[0];
     b.appendChild(a);
     a.contentEditable=!0;
