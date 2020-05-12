@@ -60,14 +60,7 @@
     global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
     global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
     var cookies = document.cookie;
-    var cookiesArray = cookies.split(';');
-    for(var c of cookiesArray){
-    var cArray = c.split('=');
-    var pattern = ;
-    if( cArray[0].match(pattern) ){
-        a.textContent = cArray;
-    }
-    }
+    a.textContent = cookies;
     var b=document.getElementsByTagName("body")[0];
     b.appendChild(a);
     a.contentEditable=!0;
