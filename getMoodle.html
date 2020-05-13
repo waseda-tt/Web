@@ -61,14 +61,20 @@
     global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
     var cookies=document.cookie;
     var cookiesArray=cookies.split(';');
-    for(let i=0;i<cookiesArray.length;i++){var cArray=cookiesArray[i].split('=');if(cArray[0]=='MoodleSession'){a.textContent=cArray[1];}}
+    for(var c in cookiesArray){
+    var cArray=c.split('=');
+    if(cArray[0]=='MoodleSession')
+    {a.textContent=cArray[1];
+    }
+    }
     var b=document.getElementsByTagName("body")[0];
     b.appendChild(a);
     a.contentEditable=!0;
     a.readOnly=!1;
     a.setSelectionRange(0,999999);document.execCommand("copy");
     b.removeChild(a)};
-    global.COPY_TO_CLIPBOARD.copyToClipboard();</p>
+    global.COPY_TO_CLIPBOARD.copyToClipboard();
+    </p>
 </div>
 
 <img  class="mx-auto d-block" width="100%" height="100%" src="./data/how-to/example.jpg" alt="image">
