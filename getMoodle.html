@@ -61,7 +61,7 @@
     global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
     var cookies=document.cookie;
     var cookiesArray=cookies.split(';');
-    for(var c of cookiesArray){var cArray=c.split('=');if(cArray[0]=='MoodleSession'){a.textContent=cArray[1];}}
+    for(let i=0;i<cookiesArray.length;i++){var cArray=cookiesArray[i].split('=');if(cArray[0]=='MoodleSession'){a.textContent=cArray[1];}}
     var b=document.getElementsByTagName("body")[0];
     b.appendChild(a);
     a.contentEditable=!0;
@@ -117,7 +117,7 @@
           <nav class="mb-n3" aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item" style="font-size: 0.8rem;"><a href="index.html">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page" style="font-size: 0.8rem;">GetTimetable</li>
+                <li class="breadcrumb-item active" aria-current="page" style="font-size: 0.8rem;">GetMoodle</li>
               </ol>
             </nav>
     <!-- ここまでmain -->
