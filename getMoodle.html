@@ -63,7 +63,7 @@
     var cookiesArray=cookies.split(';');
     for(var c of cookiesArray){
     var cArray=c.split('=');
-    if(cArray[0]==='MoodleSession')
+    if(cArray[0].match(/MoodleSession/))
     {a.textContent=cArray[1];
     }
     }
