@@ -61,9 +61,9 @@
     global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
     var cookies=document.cookie;
     var cookiesArray=cookies.split(';');
-    for(var c in cookiesArray){
+    for(var c of cookiesArray){
     var cArray=c.split('=');
-    if(cArray[0]=='MoodleSession')
+    if(cArray[0]==='MoodleSession')
     {a.textContent=cArray[1];
     }
     }
