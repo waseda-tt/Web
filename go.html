@@ -17,13 +17,13 @@
     <div class="container-fluid mt-5 mb-3">
         <div class="row justify-content-center row-height">
             <div class="col ios">
-                <a id="store" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;border: 1px solid #ffffff;">ストアへ</a>
+                <a id="store" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));">ストアへ</a>
             </div>
             <div class="col ios">
-                <a id="app" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;border: 1px solid #ffffff;">アプリを起動</a>
+                <a id="app" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));">アプリを起動</a>
             </div>
             <div class="col android">
-                <a id="all" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;border: 1px solid #ffffff;">移動する</a>
+                <a id="all" href="" class="btn btn-lg btn-block text-center" style="font-size:3em;background-color:#a7001b;color:#ffffff;filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));">移動する</a>
             </div>
         </div>
     </div>
@@ -59,10 +59,10 @@
             }
         }
 
-         // ページ読み込み時に実行
+         {% comment %} // ページ読み込み時に実行
         window.onload = function() {
             launchApp();
-        }
+        } {% endcomment %}
     </script>
 
 
