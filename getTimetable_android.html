@@ -55,7 +55,9 @@
     border-top: solid 5px #5d627b;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);">
     <p style="margin: 0; 
-    padding: 0;">javascript:var global=window; global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{}; global.COPY_TO_CLIPBOARD.copyToClipboard=function(){
+    padding: 0;">javascript:var global=window;
+    global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
+    global.COPY_TO_CLIPBOARD.copyToClipboard=function(){
 var copyFrom = document.createElement("textarea");
 copyFrom.textContent = document.body.outerHTML;
 var bodyElm = document.getElementsByTagName("body")[0];
@@ -65,6 +67,8 @@ document.execCommand('copy');
 bodyElm.removeChild(copyFrom)};
 global.COPY_TO_CLIPBOARD.copyToClipboard();</p>
 </div>
+
+<img  class="mx-auto d-block" width="100%" height="100%" src="./data/how-to/example_a.jpg" alt="image">
           </div>
 
              <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作3</p>

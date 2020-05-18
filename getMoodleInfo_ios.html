@@ -58,7 +58,8 @@
     <p style="margin: 0; 
     padding: 0;">javascript:var global=window;
     global.COPY_TO_CLIPBOARD=global.COPY_TO_CLIPBOARD||{};
-    global.COPY_TO_CLIPBOARD.copyToClipboard=function(){var a=document.createElement("textarea");
+    global.COPY_TO_CLIPBOARD.copyToClipboard=function(){
+    var a=document.createElement("textarea");
     var cookies=document.cookie;
     var cookiesArray=cookies.split(';');
     for(var c of cookiesArray){
@@ -71,7 +72,8 @@
     b.appendChild(a);
     a.contentEditable=!0;
     a.readOnly=!1;
-    a.setSelectionRange(0,999999);document.execCommand("copy");
+    a.setSelectionRange(0,999999);
+    document.execCommand("copy");
     b.removeChild(a)};
     global.COPY_TO_CLIPBOARD.copyToClipboard();
     </p>
@@ -83,7 +85,7 @@
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作3</p>
       <div class="row">
         <p class="mx-3">Safari下部の本マークをタップし、一番左にあるお気に入り(これも本マーク)を開く。右下の編集をタップし、「わせコマ Moodle一括確認用」を選択。すると編集ページが開きますので、URL部分を先程コピーしたものに置き換えて完了を押します。</p>
-        <img  class="mx-auto d-block" width="100%" height="100%" src="./data/how-to/adress.jpg" alt="image">
+        <img  class="mx-auto d-block" width="100%" height="100%" src="./data/how-to/adress_moodle.PNG" alt="image">
             </div>
 
             <p class="mt-5 border-left border-primary" style="font-size:1.3rem;">　操作4</p>
